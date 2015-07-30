@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5AE1FEC1B686BDB006E6CCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE1FEB1B686BDB006E6CCF /* main.m */; };
+		A5AE1FEF1B686BDB006E6CCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE1FEE1B686BDB006E6CCF /* AppDelegate.m */; };
+		A5AE1FF21B686BDB006E6CCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE1FF11B686BDB006E6CCF /* ViewController.m */; };
+		A5AE1FF51B686BDB006E6CCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5AE1FF31B686BDB006E6CCF /* Main.storyboard */; };
+		A5AE1FF81B686BDB006E6CCF /* QuickPolls.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5AE1FF61B686BDB006E6CCF /* QuickPolls.xcdatamodeld */; };
+		A5AE1FFA1B686BDB006E6CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AE1FF91B686BDB006E6CCF /* Assets.xcassets */; };
+		A5AE1FFD1B686BDB006E6CCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5AE1FFB1B686BDB006E6CCF /* LaunchScreen.storyboard */; };
+		A5AE20081B686BDB006E6CCF /* QuickPollsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE20071B686BDB006E6CCF /* QuickPollsTests.m */; };
+		A5AE20131B686BDB006E6CCF /* QuickPollsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE20121B686BDB006E6CCF /* QuickPollsUITests.m */; };
+		A5AE202A1B686D2E006E6CCF /* PollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE20291B686D2E006E6CCF /* PollTableViewCell.m */; };
+		A5AE20331B688615006E6CCF /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE20321B688615006E6CCF /* KeyboardViewController.m */; };
+		A5AE20371B688615006E6CCF /* PollKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5AE202F1B688615006E6CCF /* PollKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5AE203C1B688999006E6CCF /* QuickPolls.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5AE1FF61B686BDB006E6CCF /* QuickPolls.xcdatamodeld */; };
+		A5AE20471B688A25006E6CCF /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE20431B688A25006E6CCF /* Option.m */; };
+		A5AE20481B688A25006E6CCF /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE20431B688A25006E6CCF /* Option.m */; };
+		A5AE20491B688A25006E6CCF /* Poll.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE20461B688A25006E6CCF /* Poll.m */; };
+		A5AE204A1B688A25006E6CCF /* Poll.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE20461B688A25006E6CCF /* Poll.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5AE20041B686BDB006E6CCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5AE1FDF1B686BDB006E6CCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5AE1FE61B686BDB006E6CCF;
+			remoteInfo = QuickPolls;
+		};
+		A5AE200F1B686BDB006E6CCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5AE1FDF1B686BDB006E6CCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5AE1FE61B686BDB006E6CCF;
+			remoteInfo = QuickPolls;
+		};
+		A5AE20351B688615006E6CCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5AE1FDF1B686BDB006E6CCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5AE202E1B688615006E6CCF;
+			remoteInfo = PollKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5AE203B1B688615006E6CCF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A5AE20371B688615006E6CCF /* PollKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A5AE1FE71B686BDB006E6CCF /* QuickPolls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickPolls.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5AE1FEB1B686BDB006E6CCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5AE1FED1B686BDB006E6CCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A5AE1FEE1B686BDB006E6CCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A5AE1FF01B686BDB006E6CCF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A5AE1FF11B686BDB006E6CCF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A5AE1FF41B686BDB006E6CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5AE1FF71B686BDB006E6CCF /* QuickPolls.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuickPolls.xcdatamodel; sourceTree = "<group>"; };
+		A5AE1FF91B686BDB006E6CCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5AE1FFC1B686BDB006E6CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5AE1FFE1B686BDB006E6CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5AE20031B686BDB006E6CCF /* QuickPollsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickPollsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5AE20071B686BDB006E6CCF /* QuickPollsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickPollsTests.m; sourceTree = "<group>"; };
+		A5AE20091B686BDB006E6CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5AE200E1B686BDB006E6CCF /* QuickPollsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickPollsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5AE20121B686BDB006E6CCF /* QuickPollsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickPollsUITests.m; sourceTree = "<group>"; };
+		A5AE20141B686BDB006E6CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5AE20281B686D2E006E6CCF /* PollTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollTableViewCell.h; sourceTree = "<group>"; };
+		A5AE20291B686D2E006E6CCF /* PollTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollTableViewCell.m; sourceTree = "<group>"; };
+		A5AE202F1B688615006E6CCF /* PollKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PollKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5AE20311B688615006E6CCF /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		A5AE20321B688615006E6CCF /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		A5AE20341B688615006E6CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5AE20411B688A25006E6CCF /* Option+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Option+CoreDataProperties.h"; path = "../Option+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A5AE20421B688A25006E6CCF /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Option.h; path = ../Option.h; sourceTree = "<group>"; };
+		A5AE20431B688A25006E6CCF /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Option.m; path = ../Option.m; sourceTree = "<group>"; };
+		A5AE20441B688A25006E6CCF /* Poll+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Poll+CoreDataProperties.h"; path = "../Poll+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A5AE20451B688A25006E6CCF /* Poll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Poll.h; path = ../Poll.h; sourceTree = "<group>"; };
+		A5AE20461B688A25006E6CCF /* Poll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Poll.m; path = ../Poll.m; sourceTree = "<group>"; };
+		A5AE204B1B688AFF006E6CCF /* QuickPolls.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = QuickPolls.entitlements; sourceTree = "<group>"; };
+		A5AE204C1B688B7D006E6CCF /* PollKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PollKeyboard.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5AE1FE41B686BDB006E6CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5AE20001B686BDB006E6CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5AE200B1B686BDB006E6CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5AE202C1B688615006E6CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5AE1FDE1B686BDB006E6CCF = {
+			isa = PBXGroup;
+			children = (
+				A5AE1FE91B686BDB006E6CCF /* QuickPolls */,
+				A5AE20061B686BDB006E6CCF /* QuickPollsTests */,
+				A5AE20111B686BDB006E6CCF /* QuickPollsUITests */,
+				A5AE20301B688615006E6CCF /* PollKeyboard */,
+				A5AE1FE81B686BDB006E6CCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5AE1FE81B686BDB006E6CCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5AE1FE71B686BDB006E6CCF /* QuickPolls.app */,
+				A5AE20031B686BDB006E6CCF /* QuickPollsTests.xctest */,
+				A5AE200E1B686BDB006E6CCF /* QuickPollsUITests.xctest */,
+				A5AE202F1B688615006E6CCF /* PollKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5AE1FE91B686BDB006E6CCF /* QuickPolls */ = {
+			isa = PBXGroup;
+			children = (
+				A5AE204B1B688AFF006E6CCF /* QuickPolls.entitlements */,
+				A5AE1FED1B686BDB006E6CCF /* AppDelegate.h */,
+				A5AE1FEE1B686BDB006E6CCF /* AppDelegate.m */,
+				A5AE20411B688A25006E6CCF /* Option+CoreDataProperties.h */,
+				A5AE20421B688A25006E6CCF /* Option.h */,
+				A5AE20431B688A25006E6CCF /* Option.m */,
+				A5AE20441B688A25006E6CCF /* Poll+CoreDataProperties.h */,
+				A5AE20451B688A25006E6CCF /* Poll.h */,
+				A5AE20461B688A25006E6CCF /* Poll.m */,
+				A5AE20281B686D2E006E6CCF /* PollTableViewCell.h */,
+				A5AE20291B686D2E006E6CCF /* PollTableViewCell.m */,
+				A5AE1FF01B686BDB006E6CCF /* ViewController.h */,
+				A5AE1FF11B686BDB006E6CCF /* ViewController.m */,
+				A5AE1FF31B686BDB006E6CCF /* Main.storyboard */,
+				A5AE1FF91B686BDB006E6CCF /* Assets.xcassets */,
+				A5AE1FFB1B686BDB006E6CCF /* LaunchScreen.storyboard */,
+				A5AE1FFE1B686BDB006E6CCF /* Info.plist */,
+				A5AE1FF61B686BDB006E6CCF /* QuickPolls.xcdatamodeld */,
+				A5AE1FEA1B686BDB006E6CCF /* Supporting Files */,
+			);
+			path = QuickPolls;
+			sourceTree = "<group>";
+		};
+		A5AE1FEA1B686BDB006E6CCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5AE1FEB1B686BDB006E6CCF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5AE20061B686BDB006E6CCF /* QuickPollsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5AE20071B686BDB006E6CCF /* QuickPollsTests.m */,
+				A5AE20091B686BDB006E6CCF /* Info.plist */,
+			);
+			path = QuickPollsTests;
+			sourceTree = "<group>";
+		};
+		A5AE20111B686BDB006E6CCF /* QuickPollsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5AE20121B686BDB006E6CCF /* QuickPollsUITests.m */,
+				A5AE20141B686BDB006E6CCF /* Info.plist */,
+			);
+			path = QuickPollsUITests;
+			sourceTree = "<group>";
+		};
+		A5AE20301B688615006E6CCF /* PollKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A5AE204C1B688B7D006E6CCF /* PollKeyboard.entitlements */,
+				A5AE20311B688615006E6CCF /* KeyboardViewController.h */,
+				A5AE20321B688615006E6CCF /* KeyboardViewController.m */,
+				A5AE20341B688615006E6CCF /* Info.plist */,
+			);
+			path = PollKeyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5AE1FE61B686BDB006E6CCF /* QuickPolls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5AE20171B686BDB006E6CCF /* Build configuration list for PBXNativeTarget "QuickPolls" */;
+			buildPhases = (
+				A5AE1FE31B686BDB006E6CCF /* Sources */,
+				A5AE1FE41B686BDB006E6CCF /* Frameworks */,
+				A5AE1FE51B686BDB006E6CCF /* Resources */,
+				A5AE203B1B688615006E6CCF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5AE20361B688615006E6CCF /* PBXTargetDependency */,
+			);
+			name = QuickPolls;
+			productName = QuickPolls;
+			productReference = A5AE1FE71B686BDB006E6CCF /* QuickPolls.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5AE20021B686BDB006E6CCF /* QuickPollsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5AE201A1B686BDB006E6CCF /* Build configuration list for PBXNativeTarget "QuickPollsTests" */;
+			buildPhases = (
+				A5AE1FFF1B686BDB006E6CCF /* Sources */,
+				A5AE20001B686BDB006E6CCF /* Frameworks */,
+				A5AE20011B686BDB006E6CCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5AE20051B686BDB006E6CCF /* PBXTargetDependency */,
+			);
+			name = QuickPollsTests;
+			productName = QuickPollsTests;
+			productReference = A5AE20031B686BDB006E6CCF /* QuickPollsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5AE200D1B686BDB006E6CCF /* QuickPollsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5AE201D1B686BDB006E6CCF /* Build configuration list for PBXNativeTarget "QuickPollsUITests" */;
+			buildPhases = (
+				A5AE200A1B686BDB006E6CCF /* Sources */,
+				A5AE200B1B686BDB006E6CCF /* Frameworks */,
+				A5AE200C1B686BDB006E6CCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5AE20101B686BDB006E6CCF /* PBXTargetDependency */,
+			);
+			name = QuickPollsUITests;
+			productName = QuickPollsUITests;
+			productReference = A5AE200E1B686BDB006E6CCF /* QuickPollsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A5AE202E1B688615006E6CCF /* PollKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5AE20381B688615006E6CCF /* Build configuration list for PBXNativeTarget "PollKeyboard" */;
+			buildPhases = (
+				A5AE202B1B688615006E6CCF /* Sources */,
+				A5AE202C1B688615006E6CCF /* Frameworks */,
+				A5AE202D1B688615006E6CCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PollKeyboard;
+			productName = PollKeyboard;
+			productReference = A5AE202F1B688615006E6CCF /* PollKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5AE1FDF1B686BDB006E6CCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "John Blanchard";
+				TargetAttributes = {
+					A5AE1FE61B686BDB006E6CCF = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = VAR7436X2W;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A5AE20021B686BDB006E6CCF = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = A5AE1FE61B686BDB006E6CCF;
+					};
+					A5AE200D1B686BDB006E6CCF = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = A5AE1FE61B686BDB006E6CCF;
+					};
+					A5AE202E1B688615006E6CCF = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = VAR7436X2W;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A5AE1FE21B686BDB006E6CCF /* Build configuration list for PBXProject "QuickPolls" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5AE1FDE1B686BDB006E6CCF;
+			productRefGroup = A5AE1FE81B686BDB006E6CCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5AE1FE61B686BDB006E6CCF /* QuickPolls */,
+				A5AE20021B686BDB006E6CCF /* QuickPollsTests */,
+				A5AE200D1B686BDB006E6CCF /* QuickPollsUITests */,
+				A5AE202E1B688615006E6CCF /* PollKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5AE1FE51B686BDB006E6CCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5AE1FFD1B686BDB006E6CCF /* LaunchScreen.storyboard in Resources */,
+				A5AE1FFA1B686BDB006E6CCF /* Assets.xcassets in Resources */,
+				A5AE1FF51B686BDB006E6CCF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5AE20011B686BDB006E6CCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5AE200C1B686BDB006E6CCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5AE202D1B688615006E6CCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5AE1FE31B686BDB006E6CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5AE20471B688A25006E6CCF /* Option.m in Sources */,
+				A5AE1FF21B686BDB006E6CCF /* ViewController.m in Sources */,
+				A5AE1FEF1B686BDB006E6CCF /* AppDelegate.m in Sources */,
+				A5AE202A1B686D2E006E6CCF /* PollTableViewCell.m in Sources */,
+				A5AE1FF81B686BDB006E6CCF /* QuickPolls.xcdatamodeld in Sources */,
+				A5AE20491B688A25006E6CCF /* Poll.m in Sources */,
+				A5AE1FEC1B686BDB006E6CCF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5AE1FFF1B686BDB006E6CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5AE20081B686BDB006E6CCF /* QuickPollsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5AE200A1B686BDB006E6CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5AE20131B686BDB006E6CCF /* QuickPollsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5AE202B1B688615006E6CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5AE204A1B688A25006E6CCF /* Poll.m in Sources */,
+				A5AE20481B688A25006E6CCF /* Option.m in Sources */,
+				A5AE203C1B688999006E6CCF /* QuickPolls.xcdatamodeld in Sources */,
+				A5AE20331B688615006E6CCF /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5AE20051B686BDB006E6CCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5AE1FE61B686BDB006E6CCF /* QuickPolls */;
+			targetProxy = A5AE20041B686BDB006E6CCF /* PBXContainerItemProxy */;
+		};
+		A5AE20101B686BDB006E6CCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5AE1FE61B686BDB006E6CCF /* QuickPolls */;
+			targetProxy = A5AE200F1B686BDB006E6CCF /* PBXContainerItemProxy */;
+		};
+		A5AE20361B688615006E6CCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5AE202E1B688615006E6CCF /* PollKeyboard */;
+			targetProxy = A5AE20351B688615006E6CCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5AE1FF31B686BDB006E6CCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5AE1FF41B686BDB006E6CCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5AE1FFB1B686BDB006E6CCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5AE1FFC1B686BDB006E6CCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5AE20151B686BDB006E6CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A5AE20161B686BDB006E6CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5AE20181B686BDB006E6CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuickPolls/QuickPolls.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = QuickPolls/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JNB.QuickPolls;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		A5AE20191B686BDB006E6CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuickPolls/QuickPolls.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = QuickPolls/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JNB.QuickPolls;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		A5AE201B1B686BDB006E6CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QuickPollsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JNB.QuickPollsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickPolls.app/QuickPolls";
+			};
+			name = Debug;
+		};
+		A5AE201C1B686BDB006E6CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = QuickPollsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JNB.QuickPollsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickPolls.app/QuickPolls";
+			};
+			name = Release;
+		};
+		A5AE201E1B686BDB006E6CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QuickPollsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JNB.QuickPollsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QuickPolls;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A5AE201F1B686BDB006E6CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QuickPollsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JNB.QuickPollsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = QuickPolls;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		A5AE20391B688615006E6CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PollKeyboard/PollKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PollKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JNB.QuickPolls.PollKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A5AE203A1B688615006E6CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PollKeyboard/PollKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PollKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JNB.QuickPolls.PollKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5AE1FE21B686BDB006E6CCF /* Build configuration list for PBXProject "QuickPolls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5AE20151B686BDB006E6CCF /* Debug */,
+				A5AE20161B686BDB006E6CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5AE20171B686BDB006E6CCF /* Build configuration list for PBXNativeTarget "QuickPolls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5AE20181B686BDB006E6CCF /* Debug */,
+				A5AE20191B686BDB006E6CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5AE201A1B686BDB006E6CCF /* Build configuration list for PBXNativeTarget "QuickPollsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5AE201B1B686BDB006E6CCF /* Debug */,
+				A5AE201C1B686BDB006E6CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5AE201D1B686BDB006E6CCF /* Build configuration list for PBXNativeTarget "QuickPollsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5AE201E1B686BDB006E6CCF /* Debug */,
+				A5AE201F1B686BDB006E6CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5AE20381B688615006E6CCF /* Build configuration list for PBXNativeTarget "PollKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5AE20391B688615006E6CCF /* Debug */,
+				A5AE203A1B688615006E6CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A5AE1FF61B686BDB006E6CCF /* QuickPolls.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A5AE1FF71B686BDB006E6CCF /* QuickPolls.xcdatamodel */,
+			);
+			currentVersion = A5AE1FF71B686BDB006E6CCF /* QuickPolls.xcdatamodel */;
+			path = QuickPolls.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A5AE1FDF1B686BDB006E6CCF /* Project object */;
+}
