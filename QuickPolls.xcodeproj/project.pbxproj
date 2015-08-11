@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A55AD5B91B6B2F9800CEE739 /* AddPollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A55AD5B81B6B2F9800CEE739 /* AddPollViewController.m */; };
+		A55AD5BC1B6C094D00CEE739 /* PollScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55AD5BB1B6C094D00CEE739 /* PollScrollView.m */; };
 		A5AE1FEC1B686BDB006E6CCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE1FEB1B686BDB006E6CCF /* main.m */; };
 		A5AE1FEF1B686BDB006E6CCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE1FEE1B686BDB006E6CCF /* AppDelegate.m */; };
 		A5AE1FF21B686BDB006E6CCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AE1FF11B686BDB006E6CCF /* ViewController.m */; };
@@ -65,6 +67,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A55AD5B71B6B2F9800CEE739 /* AddPollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPollViewController.h; sourceTree = "<group>"; };
+		A55AD5B81B6B2F9800CEE739 /* AddPollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPollViewController.m; sourceTree = "<group>"; };
+		A55AD5BA1B6C094D00CEE739 /* PollScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollScrollView.h; sourceTree = "<group>"; };
+		A55AD5BB1B6C094D00CEE739 /* PollScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollScrollView.m; sourceTree = "<group>"; };
 		A5AE1FE71B686BDB006E6CCF /* QuickPolls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickPolls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5AE1FEB1B686BDB006E6CCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A5AE1FED1B686BDB006E6CCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -168,6 +174,10 @@
 				A5AE20291B686D2E006E6CCF /* PollTableViewCell.m */,
 				A5AE1FF01B686BDB006E6CCF /* ViewController.h */,
 				A5AE1FF11B686BDB006E6CCF /* ViewController.m */,
+				A55AD5B71B6B2F9800CEE739 /* AddPollViewController.h */,
+				A55AD5B81B6B2F9800CEE739 /* AddPollViewController.m */,
+				A55AD5BA1B6C094D00CEE739 /* PollScrollView.h */,
+				A55AD5BB1B6C094D00CEE739 /* PollScrollView.m */,
 				A5AE1FF31B686BDB006E6CCF /* Main.storyboard */,
 				A5AE1FF91B686BDB006E6CCF /* Assets.xcassets */,
 				A5AE1FFB1B686BDB006E6CCF /* LaunchScreen.storyboard */,
@@ -388,6 +398,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5AE20471B688A25006E6CCF /* Option.m in Sources */,
+				A55AD5BC1B6C094D00CEE739 /* PollScrollView.m in Sources */,
+				A55AD5B91B6B2F9800CEE739 /* AddPollViewController.m in Sources */,
 				A5AE1FF21B686BDB006E6CCF /* ViewController.m in Sources */,
 				A5AE1FEF1B686BDB006E6CCF /* AppDelegate.m in Sources */,
 				A5AE202A1B686D2E006E6CCF /* PollTableViewCell.m in Sources */,

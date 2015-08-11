@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OUm-hG-ztf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="165" id="b6h-WV-0hx">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="165" id="b6h-WV-0hx" customClass="PollTableViewCell">
                                         <rect key="frame" x="0.0" y="22" width="600" height="165"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b6h-WV-0hx" id="KTS-Wc-Pdn">
@@ -45,6 +45,11 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCK-RD-LOp" userLabel="Add Button">
                                 <rect key="frame" x="558" y="30" width="22" height="22"/>
+                                <connections>
+                                    <segue destination="Q8H-TU-Tpx" kind="popoverPresentation" popoverAnchorView="dCK-RD-LOp" id="VSe-37-Uhb">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwG-xL-XaK" userLabel="Background Label">
                                 <rect key="frame" x="0.0" y="60" width="600" height="31"/>
@@ -99,6 +104,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TBf-8j-89X"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="featuredButton" destination="gld-u4-zGF" id="xQp-pV-1sC"/>
                         <outlet property="myPollButton" destination="2d5-Ve-Pcu" id="rda-Yh-zcV"/>
@@ -108,7 +115,89 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1964" y="375"/>
+        </scene>
+        <!--Add Poll View Controller-->
+        <scene sceneID="9d5-In-5dK">
+            <objects>
+                <viewController id="Q8H-TU-Tpx" customClass="AddPollViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D0w-YD-DQY"/>
+                        <viewControllerLayoutGuide type="bottom" id="6XU-eD-QMQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0c4-9K-s8m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Polls" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtS-ZF-GtO">
+                                <rect key="frame" x="0.0" y="28" width="600" height="25"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hc0-WD-O9M">
+                                <rect key="frame" x="0.0" y="61" width="600" height="335"/>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8RX-L1-oZ1">
+                                <rect key="frame" x="0.0" y="393" width="600" height="207"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b34-Bp-eBl">
+                                <rect key="frame" x="20" y="26" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="popoverPresentation" popoverAnchorView="b34-Bp-eBl" id="zsm-OP-9Pq">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8RX-L1-oZ1" secondAttribute="trailing" id="9t2-u8-X3f"/>
+                            <constraint firstItem="b34-Bp-eBl" firstAttribute="leading" secondItem="0c4-9K-s8m" secondAttribute="leadingMargin" id="FJS-Vb-aii"/>
+                            <constraint firstItem="8RX-L1-oZ1" firstAttribute="top" secondItem="0c4-9K-s8m" secondAttribute="top" constant="393" id="QEZ-S4-pDm"/>
+                            <constraint firstItem="xtS-ZF-GtO" firstAttribute="top" secondItem="D0w-YD-DQY" secondAttribute="bottom" constant="8" symbolic="YES" id="UGa-aQ-LfP"/>
+                            <constraint firstItem="Hc0-WD-O9M" firstAttribute="leading" secondItem="0c4-9K-s8m" secondAttribute="leading" id="bU6-XF-uYy"/>
+                            <constraint firstItem="Hc0-WD-O9M" firstAttribute="top" secondItem="xtS-ZF-GtO" secondAttribute="bottom" constant="8" symbolic="YES" id="dR3-li-Ogf"/>
+                            <constraint firstItem="8RX-L1-oZ1" firstAttribute="trailing" secondItem="Hc0-WD-O9M" secondAttribute="trailing" id="hAn-tR-Icc"/>
+                            <constraint firstItem="Hc0-WD-O9M" firstAttribute="leading" secondItem="xtS-ZF-GtO" secondAttribute="leading" id="in8-sv-yUP"/>
+                            <constraint firstItem="Hc0-WD-O9M" firstAttribute="trailing" secondItem="xtS-ZF-GtO" secondAttribute="trailing" id="l7M-WW-ubR"/>
+                            <constraint firstItem="Hc0-WD-O9M" firstAttribute="top" secondItem="b34-Bp-eBl" secondAttribute="bottom" constant="5" id="mOS-uF-kGl"/>
+                            <constraint firstItem="6XU-eD-QMQ" firstAttribute="top" secondItem="Hc0-WD-O9M" secondAttribute="bottom" constant="204" id="qIU-p7-M4u"/>
+                            <constraint firstItem="8RX-L1-oZ1" firstAttribute="leading" secondItem="Hc0-WD-O9M" secondAttribute="leading" id="tXp-dk-ybg"/>
+                            <constraint firstItem="8RX-L1-oZ1" firstAttribute="bottom" secondItem="6XU-eD-QMQ" secondAttribute="top" id="tfl-6j-dOb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="optionScrollView" destination="Hc0-WD-O9M" id="cOh-ov-6jf"/>
+                        <outlet property="pollScrollView" destination="8RX-L1-oZ1" id="66O-K3-TtS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gyi-lg-voi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2604" y="375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="y6n-jf-aaz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="OUm-hG-ztf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xdw-w4-0hm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nP4-nE-w4e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7W-iS-6ov" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="1152" y="375"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="zsm-OP-9Pq"/>
+    </inferredMetricsTieBreakers>
 </document>

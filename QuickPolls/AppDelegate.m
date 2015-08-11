@@ -17,8 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-//    ViewController *vc = self.window.rootViewController;
-//    vc.moc = self.managedObjectContext;
+    UINavigationController *nc = (UINavigationController*) self.window.rootViewController;
+    ViewController* vc = (ViewController*) [nc.viewControllers objectAtIndex:0];
+    vc.moc = self.managedObjectContext;
     return YES;
 }
 

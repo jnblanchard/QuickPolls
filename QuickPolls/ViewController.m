@@ -8,25 +8,33 @@
 
 #import "ViewController.h"
 #import "PollTableViewCell.h"
+#import "PollScrollView.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *pollTitleView;
 @property (weak, nonatomic) IBOutlet UIButton *myPollButton;
 @property (weak, nonatomic) IBOutlet UIButton *featuredButton;
 @property (weak, nonatomic) IBOutlet UITableView *pollTableView;
+
 @property NSArray* pollArray;
+
+
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad
 {
+
     [super viewDidLoad];
+
     self.myPollButton.layer.borderColor = [[UIColor blueColor]CGColor];
     self.myPollButton.layer.borderWidth = 1.0;
     self.featuredButton.layer.borderColor = [[UIColor blueColor] CGColor];
     self.featuredButton.layer.borderWidth = 1.0;
-    self.pollArray = [self.moc executeFetchRequest:[[NSFetchRequest alloc] initWithEntityName:@"Poll"] error:nil];
+    self.pollArray = [self.moc executeFetchRequest:[NSFetchRequest fetchRequestWithEntityName:@"Poll"] error:nil];
+//    NSLog(@"%@", self.pollArray);
     [self.pollTableView reloadData];
     [self switchTextBoldnessInAllButtons];
     // Do any additional setup after loading the view, typically from a nib.
@@ -40,7 +48,7 @@
     [optionOne setName:@"Yes, you do"];
     [optionOne setCount:[NSNumber numberWithInt:1]];
     Option* optionTwo = [NSEntityDescription insertNewObjectForEntityForName:@"Option" inManagedObjectContext:self.moc];
-    [optionTwo setName:@"No, you do no"];
+    [optionTwo setName:@"No, you do not"];
     [optionTwo setCount:[NSNumber numberWithInt:0]];
     [poll addOptions:[NSSet setWithArray:@[optionOne, optionTwo]]];
     [self.moc save:nil];
@@ -71,26 +79,12 @@
     return self.pollArray.count;
 }
 
--(UITableViewCell*)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
+-(PollTableViewCell*)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    PollTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     Poll* poll = [self.pollArray objectAtIndex:indexPath.row];
-    CGFloat y = 0;
-    CGFloat height = cell.frame.size.height/poll.options.count;
-    NSLog(@"%@", poll.options);
-    for (Option* option in poll.options)
-    {
-        UIButton* button = [UIButton buttonWithType:UIButtonTypeSystem];
-        [button setFrame:CGRectMake(0, y, cell.frame.size.width, height)];
-        y += height;
-        [button setTitle:option.name forState:UIControlStateNormal];
-        [button setBackgroundColor:[UIColor colorWithRed:rand()/255 green:rand()/255 blue:rand()/255 alpha:1]];
-        [button.titleLabel setTextAlignment:NSTextAlignmentCenter];
-        [button.titleLabel setTextColor:[UIColor whiteColor]];
-        [cell addSubview:button];
-
-    }
-    cell.textLabel.text = poll.name;
+    PollScrollView* scrollView = [PollScrollView initWithPoll:poll withParentView:cell];
+    [cell addSubview:scrollView];
     return cell;
 }
 
